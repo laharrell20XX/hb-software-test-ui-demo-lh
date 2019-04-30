@@ -1,6 +1,18 @@
 import React from 'react';
 import './index.css';
 
+function LineItem() {
+    return (
+        <tr className="list-item-table-row">
+            <td>Lorem Ipsum</td>
+            <td>$12.34</td>
+            <td>
+                <button>Remove Item</button>
+            </td>
+        </tr>
+    )
+}
+
 function LineItemsList() {
     return (
         <div>
@@ -14,13 +26,7 @@ function LineItemsList() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="list-item-table-row">
-                            <td>Lorem Ipsum</td>
-                            <td>$12.34</td>
-                            <td>
-                                <button>Remove Item</button>
-                            </td>
-                        </tr>
+                        <LineItem />
                     </tbody>
                 </table>
                 <button>Add Item</button>
