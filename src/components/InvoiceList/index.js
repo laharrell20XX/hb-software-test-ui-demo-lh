@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 function InvoiceListItem({ invoice }) {
@@ -7,7 +8,9 @@ function InvoiceListItem({ invoice }) {
             <td>{invoice.invoiceNum}</td>
             <td>{`$${invoice.total}`}</td>
             <td>
-                <button>Details</button>
+                <Link to={`invoices/${invoice.id}`}>
+                    <button>Details</button>
+                </Link>
             </td>
         </tr>
     )
@@ -21,6 +24,7 @@ function InvoiceList() {
     ]
     return (
         <div className="invoice-list">
+            <h1>Invoices</h1>
             <button>New Invoice</button>
             <div>
                 <table>
