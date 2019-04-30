@@ -1,0 +1,12 @@
+.invoice-list {
+    padding: 2rem 0rem 0rem 2rem
+  }
+  
+  .invoice-list table {
+    margin-top: 2rem
+  }
+  
+  .invoice-list .invoice-table-header th {
+    padding-right: 5rem;
+  }
+  
