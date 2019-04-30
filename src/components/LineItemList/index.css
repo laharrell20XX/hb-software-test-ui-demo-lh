@@ -11,3 +11,8 @@
   .list-items-list .list-item-table-header th {
     padding-right: 5rem;
   }
+
+.home-page-link {
+    margin-top: 2rem;
+    display: block;
+}
