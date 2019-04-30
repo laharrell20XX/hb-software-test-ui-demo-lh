@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hb-software-test-ui-demo-lh/static/css/main.5f1639f8.chunk.css",
+    "main.js": "/hb-software-test-ui-demo-lh/static/js/main.e99a1c83.chunk.js",
+    "main.js.map": "/hb-software-test-ui-demo-lh/static/js/main.e99a1c83.chunk.js.map",
+    "runtime~main.js": "/hb-software-test-ui-demo-lh/static/js/runtime~main.ebe8298d.js",
+    "runtime~main.js.map": "/hb-software-test-ui-demo-lh/static/js/runtime~main.ebe8298d.js.map",
+    "static/js/2.63a889e5.chunk.js": "/hb-software-test-ui-demo-lh/static/js/2.63a889e5.chunk.js",
+    "static/js/2.63a889e5.chunk.js.map": "/hb-software-test-ui-demo-lh/static/js/2.63a889e5.chunk.js.map",
+    "index.html": "/hb-software-test-ui-demo-lh/index.html",
+    "precache-manifest.b35dda7d5c5bb6aa9142092972e9dbbb.js": "/hb-software-test-ui-demo-lh/precache-manifest.b35dda7d5c5bb6aa9142092972e9dbbb.js",
+    "service-worker.js": "/hb-software-test-ui-demo-lh/service-worker.js",
+    "static/css/main.5f1639f8.chunk.css.map": "/hb-software-test-ui-demo-lh/static/css/main.5f1639f8.chunk.css.map"
+  }
+}
