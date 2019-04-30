@@ -1,0 +1,13 @@
+.list-items-list {
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+.list-items-list table {
+    margin-bottom: 1rem;
+    padding: 0
+}
+  
+  .list-items-list .list-item-table-header th {
+    padding-right: 5rem;
+  }
