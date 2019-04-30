@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 function LineItem({ lineItem }) {
@@ -47,6 +48,9 @@ function LineItemsList(props) {
                 <button>Add Item</button>
             </div>
             <button>Save Item</button>
+            <Link to="/invoices" className="home-page-link">
+                Home
+            </Link>
         </div>
     )
 }
