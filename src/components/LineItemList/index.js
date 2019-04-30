@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
 
-function LineItem() {
+function LineItem({ lineItem }) {
     return (
         <tr className="list-item-table-row">
-            <td>Lorem Ipsum</td>
-            <td>$12.34</td>
+            <td>{lineItem.description}</td>
+            <td>{`$${lineItem.amount.toFixed(2)}`}</td>
             <td>
                 <button>Remove Item</button>
             </td>
@@ -13,7 +13,20 @@ function LineItem() {
     )
 }
 
-function LineItemsList() {
+function LineItemsList(props) {
+    const { id } = props.match.params
+
+    const lineItems = [
+        { "description": "Lorem Ipsum", "amount": 12.34, "invoiceId": 1 },
+        { "description": "Solor Amet", "amount": 5.00, "invoiceId": 1 },
+        { "description": "Lorem Ipsum", "amount": 12.34, "invoiceId": 2 },
+        { "description": "Tempor Incididunt", "amount": 0.00, "invoiceId": 2 },
+        { "description": "Lorem Ipsum", "amount": 12.34, "invoiceId": 3 },
+        { "description": "Ad Minim", "amount": 43.45, "invoiceId": 3 },
+    ]
+
+    const filteredLineItems = lineItems.filter(lineItem => lineItem.invoiceId === Number(id))
+
     return (
         <div>
             <h1>Line Items</h1>
@@ -26,7 +39,9 @@ function LineItemsList() {
                         </tr>
                     </thead>
                     <tbody>
-                        <LineItem />
+                        {filteredLineItems.map((lineItem, i) =>
+                            <LineItem lineItem={lineItem} key={i} />
+                        )}
                     </tbody>
                 </table>
                 <button>Add Item</button>
